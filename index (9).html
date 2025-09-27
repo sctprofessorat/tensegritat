@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller pràctic per a docents de Tecnologia · Estructures de tensegritat</title>
+  <meta name="description" content="Versió web del correu per al taller pràctic per a docents de Tecnologia: estructures de tensegritat.">
+  <style>
+    :root {
+      --bg:#ffffff;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --link:#E10000;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:820px;margin:40px auto;padding:0 20px}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.06);overflow:hidden;border:1px solid rgba(0,0,0,.06)}
+    header{padding:18px 22px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+    .content{padding:18px 26px 26px}
+    .muted{color:var(--muted);font-size:14px}
+    .btn{display:inline-block;background:var(--link);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700;border:0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:10px}
+    @media (max-width:760px){ .grid{grid-template-columns:1fr} .content{padding:20px} }
+    footer{padding:18px 22px;color:var(--muted);font-size:13px;border-top:1px solid rgba(0,0,0,.06)}
+    .content a{color:var(--link)}
+    /* ---- capçalera ---- */
+    .title-row{display:flex;align-items:flex-start;gap:14px;padding-bottom:6px;}
+    .title-row img{height:64px;width:auto;flex:0 0 auto;} /* logo una mica més gran */
+    .title-text{display:flex;flex-direction:column;gap:4px;}
+    .title-text h1{margin:0;font-size:24px;line-height:1.25;font-weight:normal;}
+    .title-text h1 .line1{display:block;color:#000000;}
+    .title-text h1 .line2{display:block;font-weight:700;color:#E10000;}
+    .view-link a{color:var(--muted);text-decoration:none;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="article" aria-labelledby="titol">
+      <header>
+        <div class="title-row">
+          <img src="logo.png" alt="SCT Professorat">
+          <div class="title-text">
+            <h1 id="titol">
+              <span class="line1">Taller pràctic per a docents de Tecnologia</span>
+              <span class="line2">Estructures de tensegritat</span>
+            </h1>
+            <p class="muted view-link">
+              <a href="https://sctprofessorat.github.io/tensegritat/" target="_blank" rel="noopener">Si no pots veure aquest missatge correctament, fes clic aquí</a>
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <p class="muted">Informació i recursos del taller. (Edita aquest text segons convingui.)</p>
+
+        <p><a class="btn" href="#" target="_blank" rel="noopener">Inscripció / Més informació</a></p>
+
+        <div class="grid" aria-label="Contingut destacat">
+          <section>
+            <h2>Contingut</h2>
+            <p>Conceptes bàsics de tensegritat, materials i construcció pas a pas. (Personalitza aquesta secció.)</p>
+          </section>
+          <section>
+            <h2>Materials</h2>
+            <ul>
+              <li>Barres i cordills (o fil de pescar)</li>
+              <li>Eines bàsiques</li>
+              <li><a href="#" download>Fitxa de preparació (PDF)</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2025 SCT Professorat · Contacte: <a href="mailto:suport@example.com">suport@example.com</a></p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
