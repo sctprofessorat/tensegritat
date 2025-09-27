@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veure el correu al navegador</title>
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root { --bg:#f6f7f9; --card:#ffffff; --text:#0f172a; --muted:#64748b; --link:#1a73e8; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --card:#171a21; --text:#e6e6e6; --muted:#9aa4af; } }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:760px;margin:40px auto;padding:0 20px}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.05);overflow:hidden}
+    header{display:flex;align-items:center;gap:12px;padding:18px 20px;border-bottom:1px solid rgba(0,0,0,.06)}
+    header img{height:36px}
+    .hero img{display:block;width:100%;height:auto}
+    .content{padding:22px 24px}
+    h1{margin:0 0 8px;font-size:28px;line-height:1.2}
+    .muted{color:var(--muted);font-size:14px}
+    .btn{display:inline-block;background:var(--link);color:#fff;padding:12px 18px;border-radius:8px;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media (max-width:700px){ .grid{grid-template-columns:1fr} }
+    footer{padding:18px 20px;color:var(--muted);font-size:13px;border-top:1px solid rgba(0,0,0,.06)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <!-- Canvia el logo i l'enllaç -->
+        <a href="https://example.com"><img src="https://via.placeholder.com/140x36?text=La+Teva+Marca" alt="La Teva Marca"></a>
+        <span class="muted">Versió web del correu</span>
+      </header>
+
+      <div class="hero">
+        <img src="https://via.placeholder.com/1200x480?text=Hero+Image" alt="Imatge destacada">
+      </div>
+
+      <div class="content">
+        <h1>Títol llaminer de l’email</h1>
+        <p class="muted">Subtítol breu amb el valor principal.</p>
+        <p>Hola <strong>Nom</strong>, aquesta és la versió web del teu correu. El contingut és el mateix que a l’email però amb una maquetació pensada per a navegador.</p>
+
+        <p><a class="btn" href="https://example.com" target="_blank" rel="noopener">Acció principal</a></p>
+
+        <div class="grid">
+          <section>
+            <h2>Secció A</h2>
+            <p>Text curt amb l’essència del teu missatge. Afegeix-hi un <a href="https://example.com">enllaç</a>.</p>
+          </section>
+          <section>
+            <h2>Secció B</h2>
+            <p>Una segona columna per a detalls, agenda o ofertes.</p>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2025 La Teva Empresa · Carrer Fictici 123, 08000 Barcelona · <a href="mailto:suport@example.com">suport@example.com</a></p>
+        <p><a href="#">Dóna’t de baixa</a> · <a href="#">Preferències</a></p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
