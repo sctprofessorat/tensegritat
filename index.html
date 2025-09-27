@@ -14,6 +14,22 @@
       --link:#E10000;
       --accent:#E10000;
     }
+    .title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* espai entre logo i text */
+}
+
+.title-row img {
+  height: 56px;   /* mida del logo */
+  width: auto;
+}
+
+.title-row h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     .wrap{max-width:820px;margin:40px auto;padding:0 20px}
@@ -34,15 +50,15 @@
   <div class="wrap">
     <div class="card" role="article" aria-labelledby="titol">
       <header>
-        <a href="https://sctprofessorat.github.io/tensegritat/">
-          <img src="logo.png" alt="SCT Professorat">
-        </a>
-        <span class="muted">Versió web del correu</span>
-      </header>
-
-      <div class="content">
-        <h1 id="titol">Taller pràctic de tensegritat</h1>
-        <p class="muted">Informació i recursos del taller. (Edita aquest text segons convingui.)</p>
+34    <div class="title-row">
+35      <img src="logo.png" alt="SCT Professorat">
+36      <h1 id="titol">Taller pràctic de tensegritat</h1>
+37    </div>
+38    <span class="muted">Versió web del correu</span>
+39  </header>
+40
+41  <div class="content">
+42    <p class="muted">Informació i recursos del taller. (Edita aquest text segons convingui.)</p>
 
         <p><a class="btn" href="#" target="_blank" rel="noopener">Inscripció / Més informació</a></p>
 
